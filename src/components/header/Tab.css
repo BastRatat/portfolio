@@ -1,0 +1,6 @@
+li:hover {
+    text-shadow: 0.5px 0.5px white;
+    cursor: pointer;
+    color: #61b15a;
+}
+

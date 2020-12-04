@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
 
-.navbar {
-    height: 80px;
+@media only screen and (max-width: 600px) {
+    .navbar {
+        height: 200px;
+    }
 }
+
 ul {
     color: white;
     font-family: 'Varela';
     font-size: 1.5em;
 
-}
-
-li:hover {
-    text-shadow: 0.5px 0.5px white;
-    cursor: pointer;
-    color: #61b15a;
 }
