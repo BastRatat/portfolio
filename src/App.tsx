@@ -8,7 +8,6 @@ import './App.css';
 import  { tabsContentEnglish } from './utils/tabsContent'
 import NavigationBar from './components/header/NavigationBar.tsx'
 import HomeCard from './components/header/HomeCard.tsx'
-import bastienPicture from './images/myself.jpg'
 
 function App() {
   
@@ -66,7 +65,13 @@ function App() {
       {contactHovered && (
         <HomeCard picture={3} title={tabsContentEnglish.contact.title} text={tabsContentEnglish.contact.text} />
       )}
-      
+      <div className="TEST" style={{backgroundColor: 'white'}}>
+        test
+      </div>
+
+      <div className="TEST" id="Home">HOME</div> 
+      <div className="TEST" id="Projects">PROJECTS</div> 
+      <div className="TEST" id="Contact">CONTACT</div> 
     </div>
   );
 }

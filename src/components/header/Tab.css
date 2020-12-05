@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
 li:hover {
     cursor: pointer;
     color: #fc5185;
     transform: scale(1.1);
 }
 
+a {
+    color:white;
+    font-family: 'Varela';
+    font-size: 1.2em;
+    letter-spacing: .15em;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #fc5185;
+    transform: scale(1.1);
+    text-decoration: none;
+}

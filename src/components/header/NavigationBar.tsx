@@ -10,16 +10,15 @@ type NavigationBarProps = {
 
 const NavigationBar:React.FunctionComponent = ({ handleHover }) => {
     return ( 
-        <div className="navbar container-fluid d-flex justify-content-center align-items-center">
-            <nav>
-                <ul className="list-inline">
-                    <Tab tabName="Home" handleHover={handleHover}/>
-                    <Tab tabName="Projects" handleHover={handleHover}/>
-                    <Tab tabName="Contact" handleHover={handleHover}/>
-                </ul>
+            <nav className="navbar fixed-top">
+                <div className="container d-flex justify-content-center align-items-center">
+                    <ul className="list-inline">
+                        <Tab tabName="Home" handleHover={handleHover}/>
+                        <Tab tabName="Projects" handleHover={handleHover}/>
+                        <Tab tabName="Contact" handleHover={handleHover}/>
+                    </ul>
+                </div>
             </nav>
-        </div>
-
     )
 }
 

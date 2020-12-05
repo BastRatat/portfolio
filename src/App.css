@@ -6,6 +6,10 @@ body {
     background: #42648b;
 }
 
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+}
+
 header {
     display: flex;
 }
@@ -49,4 +53,8 @@ header {
   
 .span-style {
     color:  #fc5185;
+}
+
+.TEST {
+    height: 100vh;
 }
