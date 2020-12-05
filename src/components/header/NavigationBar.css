@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
 
+.navbar {
+    background: #364f6b;
+    width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
     .navbar {
         height: 200px;
@@ -7,7 +12,7 @@
 }
 
 ul {
-    color: white;
+    color:white;
     font-family: 'Varela';
     font-size: 1.5em;
 

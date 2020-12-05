@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+.card {
+  background-color:  #2d4561;
+}
+
+.card-title {
+  color: #fc5185;
+  font-size: 1.5em;
+  font-family: 'Varela';
+}
+
+.card-body {
+  color: white;
+  font-size: 1.1em;
+  font-family: 'Varela';
+}

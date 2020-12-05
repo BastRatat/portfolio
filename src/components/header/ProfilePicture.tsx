@@ -6,25 +6,35 @@ import pictureTwo from '../../images/img_2.jpg'
 import pictureThree from '../../images/img_3.jpg'
 import './Picture.css'
 
-const ProfilePicture:React.FunctionComponent = ({ picture }) => {
+interface ProfilePictureProps {
+    picture: number
+}
+
+const ProfilePicture:React.FunctionComponent = ({picture}:ProfilePictureProps) => {
     if (picture === 1) {
         return (
-            <div className="container d-flex justify-content-center">
-                <img src={pictureOne} className="img-fluid" alt="programming" />
+            <div className="container d-flex justify-content-center align-items-center">
+                <img src={pictureOne} className="image img-fluid rounded" alt="programming" width="350px" />
             </div>
         )
     } else if (picture === 2) {
         return (
-            <div className="container d-flex justify-content-center">
-                <img src={pictureTwo} className="img-fluid" alt="programming" />
+            <div className="container d-flex justify-content-center align-items-center">
+                <img src={pictureTwo} className="image img-fluid rounded" alt="programming" width="350px" />
             </div>
         )
     } else if (picture === 3) {
         return (
-            <div className="container d-flex justify-content-center">
-                <img src={pictureThree} className="img-fluid" alt="programming" />
+            <div className="container d-flex justify-content-center align-items-center">
+                <img src={pictureThree} className="image img-fluid rounded" alt="programming" width="350px" />
             </div>
         )  
+    } else {
+        return (
+            <div>
+                Nothing
+            </div>
+        )
     }
 }
  
