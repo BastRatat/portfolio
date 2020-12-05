@@ -9,3 +9,44 @@ body {
 header {
     display: flex;
 }
+
+.home-message {
+    background-color: #2d4561;
+    color: white;
+    font-family: 'Varela';
+    font-size: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+    .home-message {
+        height: 150px;
+    }
+}
+
+.typewriter {
+    border-right: solid 3px  #fc5185;
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    color: white;
+  }
+
+.typewriter {
+    animation: 
+        animated-text 3s steps(29,end) 1s 1 normal both,
+        animated-cursor 600ms steps(29,end);
+}
+  
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 310px;}
+}
+
+@keyframes animated-cursor{
+    from{border-right-color: #fc5185;}
+    to{border-right-color: transparent;}
+}
+  
+.span-style {
+    color:  #fc5185;
+}
