@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+footer {
+  background-color: #364f6b;
+  margin-top: 40px;
+}
+
+h4 {
+  color: #43dde6;
+  text-align: center;
+  font-family: 'Varela';
+}
+
+ul { 
+  margin: 0
+}
+
+span {
+  color: #fc5185;
+}

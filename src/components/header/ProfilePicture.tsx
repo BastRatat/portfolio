@@ -1,5 +1,4 @@
  // @ts-nocheck
-// https://colorsinspo.com/
 import React from 'react';
 import pictureOne from '../../images/img_1.jpg'
 import pictureTwo from '../../images/img_2.jpg'

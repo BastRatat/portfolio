@@ -8,10 +8,9 @@ import './App.css';
 import  { tabsContentEnglish } from './utils/tabsContent'
 import NavigationBar from './components/header/NavigationBar.tsx'
 import HomeCard from './components/header/HomeCard.tsx'
+import Footer from './components/footer/Footer.tsx'
 
 function App() {
-  
-  console.log(tabsContentEnglish)
 
   const [homeMessage, setHomeMessage] = useState<boolean>(true)
   const [homeHovered, setHomeHovered] = useState<boolean>(false)
@@ -47,7 +46,7 @@ function App() {
         <NavigationBar handleHover={handleHover} />
       </header>
       {homeMessage && (
-        <Container fluid className="home-message">
+        <Container className="home-message my-5 jumb">
               <h2 className="text-center p-3">Bastien Ratat, <span className="span-style">26</span></h2>
               <div className="d-flex align-items-center justify-content-center align-items-center p-3">
                 <h5 className="typewriter">
@@ -65,13 +64,7 @@ function App() {
       {contactHovered && (
         <HomeCard picture={3} title={tabsContentEnglish.contact.title} text={tabsContentEnglish.contact.text} />
       )}
-      <div className="TEST" style={{backgroundColor: 'white'}}>
-        test
-      </div>
-
-      <div className="TEST" id="Home">HOME</div> 
-      <div className="TEST" id="Projects">PROJECTS</div> 
-      <div className="TEST" id="Contact">CONTACT</div> 
+      <Footer />
     </div>
   );
 }

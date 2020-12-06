@@ -4,6 +4,12 @@
   background-color:  #2d4561;
 }
 
+@media only screen and (max-width: 600px) {
+  .card {
+    margin-top: 40px;
+  }
+}
+
 .card-title {
   color: #fc5185;
   font-size: 1.5em;
