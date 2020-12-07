@@ -1,6 +1,6 @@
- // @ts-nocheck
+// @ts-nocheck
 
- // declare a card object for each tab with titles and content
+// declare a card object for each tab with titles and content
 
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
@@ -9,6 +9,8 @@ import  { tabsContentEnglish } from './utils/tabsContent'
 import NavigationBar from './components/header/NavigationBar.tsx'
 import HomeCard from './components/header/HomeCard.tsx'
 import Footer from './components/footer/Footer.tsx'
+
+import { UpCircleFilled } from '@ant-design/icons' 
 
 function App() {
 
@@ -64,8 +66,23 @@ function App() {
       {contactHovered && (
         <HomeCard picture={3} title={tabsContentEnglish.contact.title} text={tabsContentEnglish.contact.text} />
       )}
+      <main>
+        <section className="container" id="home">
+          <h1>Home</h1>
+        </section>
+        <section className="container" id="projects">
+          <h1>Projects</h1>
+        </section>
+        <section className="container" id="contact">
+          <h1>Contact</h1>
+        </section>
+        <section className="container">
+          <h1>BEFORE FOOTER</h1>
+        </section>
+      </main>
       <Footer />
     </div>
+    
   );
 }
 

@@ -17,7 +17,7 @@ const Tab:React.FunctionComponent<TabProps> = ({ tabName, handleHover }) => {
                 onMouseEnter={() => handleHover(tabName)}
                 onMouseLeave={() => handleHover(tabName)}
             >
-                <a href={`#${tabName}`}>{tabName.toUpperCase()}</a>
+                <a href={`#${tabName.toLowerCase()}`}>{tabName.toUpperCase()}</a>
             </li>
         
 
