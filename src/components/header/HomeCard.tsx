@@ -1,6 +1,6 @@
  // @ts-nocheck
 import React from 'react';
-import { Card, Container, Row, Col } from 'react-bootstrap';
+import { Card, Container, Row, Col } from 'react-bootstrap'
 import ProfilePicture from './ProfilePicture.tsx'
 import './Homecard.css'
 
@@ -11,7 +11,6 @@ interface HomeCardProps {
 }
 
 const HomeCard:React.FunctionComponent = ({picture, title, text}:HomeCardProps) => {
-
     return (  
             <Card className="card">
                     <Container>

@@ -1,7 +1,5 @@
 // @ts-nocheck
 
-// declare a card object for each tab with titles and content
-
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
 import './App.css';
@@ -9,6 +7,7 @@ import  { tabsContentEnglish } from './utils/tabsContent'
 import NavigationBar from './components/header/NavigationBar.tsx'
 import HomeCard from './components/header/HomeCard.tsx'
 import Footer from './components/footer/Footer.tsx'
+import TechDesk from './components/body/TechDesk/TechDesk.tsx'
 
 import { UpCircleFilled } from '@ant-design/icons' 
 
@@ -69,6 +68,10 @@ function App() {
       <main>
         <section className="container" id="home">
           <h1>Home</h1>
+        </section>
+        <section className="container" id="tech">
+        <h1>Tech stack</h1>
+          <TechDesk />
         </section>
         <section className="container" id="projects">
           <h1>Projects</h1>
