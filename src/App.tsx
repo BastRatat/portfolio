@@ -15,28 +15,39 @@ function App() {
 
   const [homeMessage, setHomeMessage] = useState<boolean>(true)
   const [homeHovered, setHomeHovered] = useState<boolean>(false)
+  const [techHovered, setTechHovered] = useState<boolean>(false)
   const [projectHovered, setProjectHovered] = useState<boolean>(false)
   const [contactHovered, setContactHovered] = useState<boolean>(false)
 
   const handleHover = (tabName) => {
     switch(tabName) {
-      case "Home":
+      case "Accueil":
         setHomeMessage(false)
         setProjectHovered(false)
         setContactHovered(false)
+        setTechHovered(false)
         setHomeHovered(true)
         break
-      case "Projects":
+      case "Projets":
         setHomeMessage(false)
         setContactHovered(false)
         setHomeHovered(false)
+        setTechHovered(false)
         setProjectHovered(true)
         break
       case "Contact":
         setHomeMessage(false)
         setProjectHovered(false)
         setHomeHovered(false)
+        setTechHovered(false)
         setContactHovered(true)
+        break
+      case "Tech":
+        setHomeMessage(false)
+        setProjectHovered(false)
+        setHomeHovered(false)
+        setContactHovered(false)
+        setTechHovered(true)
         break
     }
   }
@@ -64,6 +75,9 @@ function App() {
       )}
       {contactHovered && (
         <HomeCard picture={3} title={tabsContentEnglish.contact.title} text={tabsContentEnglish.contact.text} />
+      )}
+      {techHovered && (
+        <HomeCard picture={4} title={tabsContentEnglish.tech.title} text={tabsContentEnglish.tech.text} />
       )}
       <main>
         <section className="container" id="home">

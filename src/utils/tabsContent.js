@@ -12,5 +12,9 @@ export const tabsContentEnglish = {
   contact: {
     title: "Still need more information?",
     text: "Feel free to contact me. I'll answer as fast as I can to provide you with the best answer"
+  },
+  tech: {
+    title: "My technical stack",
+    text: "Check out the different techs I'm currently using for my web projects"
   }
 }

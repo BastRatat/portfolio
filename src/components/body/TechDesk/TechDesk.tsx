@@ -12,8 +12,8 @@ export const TechDesk:React.FunctionComponent = () => {
   return (  
     <Container className="deck">
       <Row>
-        {technologies.map((tech) => (
-          <Col xs={4}>
+        {technologies.map((tech, index) => (
+          <Col xs={4} key={index}>
             <TechCard 
               techLogo={tech.image}
               title={tech.title}
@@ -22,7 +22,6 @@ export const TechDesk:React.FunctionComponent = () => {
           </Col>
         ))}
       </Row>
-
     </Container>
   )
 }

@@ -27,6 +27,7 @@ const TechCard:React.FunctionComponent = ({techLogo, title, content}:TechCardPro
         
       >
         <img src={techLogo} alt="Tech" className="img-fluid" width="300" />
+        <a href="#home" className="stretched-link"></a>
       </animated.div>
     </Card>
   )

@@ -105,10 +105,6 @@ button {
     font-size: 1.3em;
 }
 
-section {
-    height: 600px;
-}
-
 #on:checked ~ main {
     scroll-behavior: smooth;
 }

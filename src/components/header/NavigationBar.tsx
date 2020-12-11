@@ -13,8 +13,9 @@ const NavigationBar:React.FunctionComponent = ({ handleHover }) => {
             <nav className="navbar">
                 <div className="container d-flex justify-content-center align-items-center">
                     <ul className="list-inline">
-                        <Tab tabName="Home" handleHover={handleHover}/>
-                        <Tab tabName="Projects" handleHover={handleHover}/>
+                        <Tab tabName="Accueil" handleHover={handleHover}/>
+                        <Tab tabName="Tech" handleHover={handleHover}/>
+                        <Tab tabName="Projets" handleHover={handleHover}/>
                         <Tab tabName="Contact" handleHover={handleHover}/>
                     </ul>
                 </div>
