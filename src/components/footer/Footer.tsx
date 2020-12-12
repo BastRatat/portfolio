@@ -1,9 +1,10 @@
  // @ts-nocheck
-import React from 'react';
-import { Row, Col } from 'react-bootstrap'
+import React, { useState, useLayoutEffect } from 'react';
+import { Row, Col, Button } from 'react-bootstrap'
 import './Footer.css'
 import gitHubPicture from '../../images/github.png'
 import linkedInPicture from '../../images/linkedIn.png'
+import { UpOutlined } from '@ant-design/icons'
 
 const socialNetworks = {
   linkedIn: {
@@ -16,7 +17,16 @@ const socialNetworks = {
   }
 }
 
+interface buttonStyle {
+  display: string
+}
+
 const Footer:React.FunctionComponent = () => {
+
+  const backTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
 
   return (  
     <footer className="container-fluid">
@@ -36,6 +46,8 @@ const Footer:React.FunctionComponent = () => {
                   <img src={socialNetworks.gitHub.picture} alt="LinkedIn" width="60" height="60" />
                 </a>
               </li>
+              <UpOutlined onClick={backTop} className="back-top-btn" />
+
           </ul>
         </Col>
       </Row>

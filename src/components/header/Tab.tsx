@@ -6,7 +6,7 @@ import './Tab.css'
 
 type TabProps = {
     tabName: string,
-    handleHover: (string, boolean)=>void
+    handleHover: (string) => void
 }
 
 const Tab:React.FunctionComponent<TabProps> = ({ tabName, handleHover }) => {

@@ -1,15 +1,29 @@
 // @ts-nocheck
 
-import React, { useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap'
-import './App.css';
-import  { tabsContentEnglish } from './utils/tabsContent'
-import NavigationBar from './components/header/NavigationBar.tsx'
-import HomeCard from './components/header/HomeCard.tsx'
-import Footer from './components/footer/Footer.tsx'
-import TechDesk from './components/body/TechDesk/TechDesk.tsx'
+// Go to top button
 
-import { UpCircleFilled } from '@ant-design/icons' 
+import React, { useState } from 'react';
+import { Container, Button } from 'react-bootstrap'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useParams
+} from "react-router-dom";
+import './App.css';
+
+import NavigationBar from './components/header/NavigationBar.tsx'
+import Homepage from './components/homepage/Homepage.tsx'
+import Footer from './components/footer/Footer.tsx'
+import HomeCard from './components/header/HomeCard.tsx'
+import { tabsContentEnglish } from './utils/tabsContent'
+
+interface hovered {
+  homeHovered: boolean,
+  techHovered: boolean,
+  projectHovered: boolean,
+  contactHovered: boolean
+}
 
 function App() {
 
@@ -19,87 +33,84 @@ function App() {
   const [projectHovered, setProjectHovered] = useState<boolean>(false)
   const [contactHovered, setContactHovered] = useState<boolean>(false)
 
+  const [hovered, setHovered] = useState<hovered>({
+    home: false,
+    tech: false,
+    projects: false,
+    contact: false
+  })
+
   const handleHover = (tabName) => {
     switch(tabName) {
       case "Accueil":
         setHomeMessage(false)
-        setProjectHovered(false)
-        setContactHovered(false)
-        setTechHovered(false)
-        setHomeHovered(true)
+        setHovered({
+          projects: false,
+          contact: false,
+          tech: false,
+          home: true
+        })
         break
       case "Projets":
         setHomeMessage(false)
-        setContactHovered(false)
-        setHomeHovered(false)
-        setTechHovered(false)
-        setProjectHovered(true)
+        setHovered({
+          home: false,
+          contact: false,
+          tech: false,
+          projects: true
+        })
         break
       case "Contact":
         setHomeMessage(false)
-        setProjectHovered(false)
-        setHomeHovered(false)
-        setTechHovered(false)
-        setContactHovered(true)
+        setHovered({
+          home: false,
+          projects: false,
+          tech: false,
+          contact: true
+        })
         break
       case "Tech":
         setHomeMessage(false)
-        setProjectHovered(false)
-        setHomeHovered(false)
-        setContactHovered(false)
-        setTechHovered(true)
+        setHovered({
+          home: false,
+          contact: false,
+          projects: false,
+          tech: true
+        })
         break
     }
   }
   
   return (
-    <div className="App">
-      <header>
-        <NavigationBar handleHover={handleHover} />
-      </header>
-      {homeMessage && (
-        <Container className="home-message my-5 jumb">
-              <h2 className="text-center p-3">Bastien Ratat, <span className="span-style">26</span></h2>
-              <div className="d-flex align-items-center justify-content-center align-items-center p-3">
-                <h5 className="typewriter">
-                  <span style={{color: '#fc5185'}}>{"<h1>"}</span>Full stack developer<span style={{color: '#fc5185'}}>{"<h1>"}</span>
-                </h5>
-              </div>
+      <div className="App">
+        <header>
+          <NavigationBar handleHover={handleHover} />
+        </header>
+        {homeMessage && (
+        <Container fluid className="home-message">
+          <h2 className="text-center p-3">Bastien Ratat, <span className="span-style">26</span></h2>
+          <div className="d-flex align-items-center justify-content-center align-items-center p-3">
+            <h5 className="typewriter">
+              <span style={{color: '#fc5185'}}>{"<h1>"}</span>Full stack developer<span style={{color: '#fc5185'}}>{"<h1>"}</span>
+            </h5>
+          </div>
         </Container>
       )}
-      {homeHovered && (
+      {hovered.home && (
         <HomeCard picture={1} title={tabsContentEnglish.home.title} text={tabsContentEnglish.home.text} />
       )}
-      {projectHovered && (
+      {hovered.projects && (
         <HomeCard picture={2} title={tabsContentEnglish.projects.title} text={tabsContentEnglish.projects.text} />
       )}
-      {contactHovered && (
+      {hovered.contact && (
         <HomeCard picture={3} title={tabsContentEnglish.contact.title} text={tabsContentEnglish.contact.text} />
       )}
-      {techHovered && (
+      {hovered.tech && (
         <HomeCard picture={4} title={tabsContentEnglish.tech.title} text={tabsContentEnglish.tech.text} />
       )}
-      <main>
-        <section className="container" id="home">
-          <h1>Home</h1>
-        </section>
-        <section className="container" id="tech">
-        <h1>Tech stack</h1>
-          <TechDesk />
-        </section>
-        <section className="container" id="projects">
-          <h1>Projects</h1>
-        </section>
-        <section className="container" id="contact">
-          <h1>Contact</h1>
-        </section>
-        <section className="container">
-          <h1>BEFORE FOOTER</h1>
-        </section>
-      </main>
-      <Footer />
-    </div>
-    
+        <Homepage />          
+        <Footer />
+      </div>
   );
 }
 
