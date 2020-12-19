@@ -12,12 +12,35 @@ export const technologies = [
   {
     title: 'React',
     image: reactImage,
-    skills: ['1', '2', '3', '4']
+    skills: [
+      '- initialisation de projets React avec create-react-app via NPM', 
+      '- installation de dépendances externes',
+      '- création de composants (fonctions et classes)',
+      '- transmission de données via les props',
+      '- suivi de l’état et du cycle de vie des composants (useState, useEffect, useContext)',
+      '- gestion des évènements',
+      '- formulaires et validation des champs (Formik et Yup)',
+      '- requêtes HTTP avec Axios et interactions avec un serveur ou une API',
+      '- opérations asynchrones via async/await et try/catch',
+      '- SPA et redirections avec react-router',
+      '- tests de composant via Jest',
+      '- utilisation de TypeScript dans React',
+      '- design avec Style Components et Antd',
+      '- intégration de Google Maps'
+    ]
   },
   {
     title: 'TypeScript',
     image: typeScriptImage,
-    skills: ['1', '2', '3', '4']
+    skills: [
+      '- mise en place d’un environnement TypeScript via NPM',
+      '- configuration du fichier tsconfig.json',
+      '- gestion des erreurs dans Visual Code',
+      '- déclaration de variables avec un type',
+      '- création d’interfaces pour modéliser les types des variables',
+      '- ajout de types au sein de fonctions',
+      '- initialisation de composants React en .tsx'
+    ]
   },
   {
     title: 'Node.js',

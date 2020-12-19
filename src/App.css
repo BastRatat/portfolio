@@ -121,3 +121,30 @@ header {
 .flex-fill {
     background-color: #484848 !important;
 }
+
+.animated-card:hover {
+    border: #fc5185 solid;
+}
+
+.tech-btn {
+    background-color: #fc5185;
+    color: white;
+    border: none;
+}
+
+.tech-btn:hover {
+    background-color: #fc5185;
+    border: none;
+}
+
+.skills {
+    text-align: justify !important;
+}
+
+.technology-content {
+    background-color:#2A2A2A;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Varela';
+    animation: tabsAppearOpacity 2s;
+}

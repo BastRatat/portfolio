@@ -25,7 +25,7 @@ const TechCard:React.FunctionComponent = ({techLogo, title, content, handleClick
         onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
         style={{ transform: props.xys.interpolate(trans) }}
-        onClick={() => handleClick(title, content)}
+        onClick={() => handleClick(techLogo, title, content)}
       >
         <img src={techLogo} alt="Tech" className="img-fluid" width="300" />
       </animated.div>
