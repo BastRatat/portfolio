@@ -1,3 +1,5 @@
+// Add transparent logo for each language
+
 // @ts-nocheck
 import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom'
@@ -7,20 +9,9 @@ import './TechDesk.css'
 import { technologies } from '../../../utils/technologies'
 
 interface Card {
+  image: string,
   title: string,
   content: string
-}
-
-function Child() {
-  // We can use the `useParams` hook here to access
-  // the dynamic pieces of the URL.
-  let { id } = useParams();
-
-  return (
-    <div>
-      TEST
-    </div>
-  );
 }
 
 export const TechDesk:React.FunctionComponent = () => {
@@ -71,7 +62,7 @@ export const TechDesk:React.FunctionComponent = () => {
     return (
       <Container className="text-center technology-content mt-3">
         <h1 className="p-4">{card.title}</h1>
-        <img src={card.image} alt="techLogo" className="img-fluid text-center p-3 mb-3" width="300"/>
+        <img src={card.image} alt="techLogo" className="img-fluid text-center p-3 mb-3" width="200"/>
         {card.content.map((skill, index) => (
           <h5 key={index} className="m-2 skills p-1">{skill}</h5>   
         ))}
