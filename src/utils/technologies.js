@@ -29,7 +29,8 @@ export const technologies = [
       '- utilisation de TypeScript dans React',
       '- design avec Style Components et Antd',
       '- intégration de Google Maps',
-      "- utilisation des variables d'environnement"
+      "- utilisation des variables d'environnement",
+      '- optimisation de la performance avec le Lazy Loading et les composants Suspense'
     ]
   },
   {
@@ -111,16 +112,41 @@ export const technologies = [
   {
     title: 'Python',
     image: python,
-    skills: ['1', '2', '3', '4']
+    skills: [
+      '- POO',
+      '- web scraping avec BeautifulSoup',
+      '- opérations matricielles via Numpy',
+      '- manipulation de données avec Pandas',
+      '- création d’outils de visualisation de données (Matplotlib et Seaborn)',
+      '- régression linéaire et prédiction en TensorFlow',
+      '- modèles basiques de Machine Learning',
+    ]
   },
   {
     title: 'HTML',
     image: html,
-    skills: ['1', '2', '3', '4']
+    skills: [
+      '- mise en forme du texte d’une page',
+      '- inclusion d’images et vidéos',
+      '- placement des éléments statiques ou dynamiques',
+      '- ajout de liens hypertextes',
+      '- création de tableaux',
+      '- intégration de maquettes',
+      '- sémantique HTML optimisée pour le SEO',
+      '- ajout de métadonnées'
+    ]
   },
   {
     title: 'CSS',
     image: css,
-    skills: ['1', '2', '3', '4']
+    skills: [
+      '- préprocesseur CSS (Sass)',
+      '- librairie externe (Bootstrap 4)',
+      '- flex box',
+      '- grid',
+      '- animations',
+      '- positionnement d’éléments',
+      '- media query et responsive web design'
+    ]
   }
 ]
