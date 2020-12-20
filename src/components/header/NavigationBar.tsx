@@ -15,7 +15,6 @@ const NavigationBar:React.FunctionComponent = ({ handleHover }) => {
                     <ul className="list-inline">
                         <Tab tabName="Accueil" handleHover={handleHover}/>
                         <Tab tabName="Tech" handleHover={handleHover}/>
-                        <Tab tabName="Projets" handleHover={handleHover}/>
                         <Tab tabName="Contact" handleHover={handleHover}/>
                     </ul>
                 </div>

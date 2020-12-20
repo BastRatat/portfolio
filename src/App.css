@@ -148,3 +148,128 @@ header {
     font-family: 'Varela';
     animation: tabsAppearOpacity 2s;
 }
+
+.contact-description {
+    color: white;
+    font-family: 'Varela';
+    text-align: justify;
+}
+
+.contact-title {
+    color: #fc5185;
+    font-family: 'Varela';
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.information-title {
+    color:  #fc5185;
+    letter-spacing: 1px;
+}
+
+.information-text {
+    color: white;
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    .alert { 
+        width: 20%
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .input-fields { 
+        width: 250px;
+        margin: 5px;
+        color: black;
+        padding: 2px;
+        padding-left: 20px;
+    }
+
+    .text-area {
+        margin: 5px;
+        padding-left: 20px;
+        padding-top: 10px;
+        width: 400px;
+        height: 100px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .input-fields { 
+        width: 200px;
+        color: black;
+        margin: 5px;
+        padding-left: 20px;
+    }
+
+    .text-area {
+        margin: 5px;
+        padding-left: 20px;
+        padding-top: 10px;
+        width: 320px;
+        height: 100px;
+        text-align: justify;
+    }
+}
+
+.input-fields {
+    border-radius: 5px;
+    border: none;
+}
+
+.text-area {
+    border-radius: 5px;
+    border: none;
+}
+
+.description-background, .contact-background {
+    background-color: #302e2e;
+    border-radius: 10px;;
+}
+
+.description-title {
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+    padding: 15px;
+    font-family: 'Varela';
+    color: #fc5185;
+}
+
+.description-text, .diploma-skill {
+    color: white;
+    font-family: 'Varela';
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.examples {
+    padding: 5px;
+    font-family: 'Varela';
+    letter-spacing: 1px !important;
+}
+
+@media screen and (min-width: 768px) {
+    .projects-background {
+        background-color: #444343;
+        border-radius: 10px;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects-background {
+        background-color: #444343;
+        border-radius: 10px;
+    }
+}
+
+.projects-titles {
+    color: #fc5185;
+}

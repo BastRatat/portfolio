@@ -21,7 +21,6 @@ import { tabsContentEnglish } from './utils/tabsContent'
 interface hovered {
   homeHovered: boolean,
   techHovered: boolean,
-  projectHovered: boolean,
   contactHovered: boolean
 }
 
@@ -30,13 +29,11 @@ function App() {
   const [homeMessage, setHomeMessage] = useState<boolean>(true)
   const [homeHovered, setHomeHovered] = useState<boolean>(false)
   const [techHovered, setTechHovered] = useState<boolean>(false)
-  const [projectHovered, setProjectHovered] = useState<boolean>(false)
   const [contactHovered, setContactHovered] = useState<boolean>(false)
 
   const [hovered, setHovered] = useState<hovered>({
     home: false,
     tech: false,
-    projects: false,
     contact: false
   })
 
@@ -49,15 +46,6 @@ function App() {
           contact: false,
           tech: false,
           home: true
-        })
-        break
-      case "Projets":
-        setHomeMessage(false)
-        setHovered({
-          home: false,
-          contact: false,
-          tech: false,
-          projects: true
         })
         break
       case "Contact":
@@ -99,16 +87,13 @@ function App() {
       {hovered.home && (
         <HomeCard picture={1} title={tabsContentEnglish.home.title} text={tabsContentEnglish.home.text} />
       )}
-      {hovered.projects && (
-        <HomeCard picture={2} title={tabsContentEnglish.projects.title} text={tabsContentEnglish.projects.text} />
-      )}
       {hovered.contact && (
         <HomeCard picture={3} title={tabsContentEnglish.contact.title} text={tabsContentEnglish.contact.text} />
       )}
       {hovered.tech && (
         <HomeCard picture={4} title={tabsContentEnglish.tech.title} text={tabsContentEnglish.tech.text} />
       )}
-        <Homepage />          
+        <Homepage />       
         <Footer />
       </div>
   );
