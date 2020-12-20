@@ -77,8 +77,8 @@ export const TechDesk:React.FunctionComponent = () => {
               <div className="py-3">
                 <h3 className="py-3 projects-titles">Projets</h3>
                 {card.links.map((example, index) => (
-                  <div className="p-2">
-                    <a href={example.link} key={index} className="examples">{example.title}</a>
+                  <div className="p-2" key={index}>
+                    <a href={example.link} className="examples">{example.title}</a>
                   </div>
                 ))}
               </div>
