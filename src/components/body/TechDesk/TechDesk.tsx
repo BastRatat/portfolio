@@ -72,13 +72,18 @@ export const TechDesk:React.FunctionComponent = () => {
           <h5 key={index} className="m-2 skills p-1">{skill}</h5>   
         ))}
         <section className="my-5 projects-background justify-content-center">
-          <div className="py-3">
-            <h3 className="py-3 projects-titles">Projets</h3>
-            {card.links.map((example, index) => (
-              <div className="p-2">
-                <a href={example.link} key={index} className="examples">{example.title}</a>
+          <div>
+            {card.links && (
+              <div className="py-3">
+                <h3 className="py-3 projects-titles">Projets</h3>
+                {card.links.map((example, index) => (
+                  <div className="p-2">
+                    <a href={example.link} key={index} className="examples">{example.title}</a>
+                  </div>
+                ))}
               </div>
-            ))}
+            )}
+
           </div>
         </section>
         <Button onClick={cleanState} className="tech-btn m-3">Retour</Button>
