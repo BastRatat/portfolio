@@ -18,8 +18,8 @@ const Description:React.FunctionComponent = () => {
           <p key={index} className="diploma-skill">{skill}</p>
         ))}
       </article>
-      <article className="p-3">
-        <h3 className="description-title">{homePageDescription.fourthParagraph}</h3>
+      <article className="p-1">
+        <h5 className="description-title">{homePageDescription.fourthParagraph}</h5>
       </article>
     </section>
 

@@ -20,17 +20,17 @@ const TechCard:React.FunctionComponent = ({techLogo, title, content, links, hand
   const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
 
   return (  
-    <Card className="flex-fill">
+    <div className="flex-fill">
       <animated.div
         className="animated-card img-fluid"
         onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
-        style={{ transform: props.xys.interpolate(trans) }}
+        style={{ transform: props.xys.interpolate(trans), backgroundColor: '#484848', boxShadow: 'none' }}
         onClick={() => handleClick(techLogo, title, content, links)}
       >
-        <img src={techLogo} alt="Tech" className="img-fluid" width="300" />
+        <img src={techLogo} alt="Tech" className="img-fluid logo" width="300" />
       </animated.div>
-    </Card>
+    </div>
   )
 }
  

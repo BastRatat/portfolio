@@ -1,20 +1,16 @@
 // TabContent in English and french
 
-export const tabsContentEnglish = {
+export const tabsContentFrench = {
   home: {
-    title: "Welcome on my portfolio",
-    text: "Junior full stack developer looking for a software engineering position in Marseille or remote"
-  },
-  projects: {
-    title: "Discover my projects",
-    text: "I've already built many applications. Come and check out my programming skills"
+    title: "Portfolio d'applications web de Bastien Ratat",
+    text: "Développeur front end junior à la recherche d'opportunités sur Marseille ou en télétravail."
   },
   contact: {
-    title: "Still need more information?",
-    text: "Feel free to contact me. I'll answer as fast as I can to provide you with the best answer"
+    title: "Besoin de me contacter?",
+    text: "N'hésitez pas à me joindre si vous avez besoin d'informations complémentaires."
   },
   tech: {
-    title: "My technical stack",
-    text: "Check out the different techs I'm currently using for my web projects"
+    title: "Technologies",
+    text: "J'ai développé différents types d'applications avec des technologies variés. De JavaScript à Python, en passant par Ruby, je suis à l'aise avec différents languages."
   }
 }

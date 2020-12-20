@@ -16,7 +16,7 @@ import NavigationBar from './components/header/NavigationBar.tsx'
 import Homepage from './components/homepage/Homepage.tsx'
 import Footer from './components/footer/Footer.tsx'
 import HomeCard from './components/header/HomeCard.tsx'
-import { tabsContentEnglish } from './utils/tabsContent'
+import { tabsContentFrench } from './utils/tabsContent'
 
 interface hovered {
   homeHovered: boolean,
@@ -85,13 +85,13 @@ function App() {
         </Container>
       )}
       {hovered.home && (
-        <HomeCard picture={1} title={tabsContentEnglish.home.title} text={tabsContentEnglish.home.text} />
+        <HomeCard picture={1} title={tabsContentFrench.home.title} text={tabsContentFrench.home.text} />
       )}
       {hovered.contact && (
-        <HomeCard picture={3} title={tabsContentEnglish.contact.title} text={tabsContentEnglish.contact.text} />
+        <HomeCard picture={3} title={tabsContentFrench.contact.title} text={tabsContentFrench.contact.text} />
       )}
       {hovered.tech && (
-        <HomeCard picture={4} title={tabsContentEnglish.tech.title} text={tabsContentEnglish.tech.text} />
+        <HomeCard picture={4} title={tabsContentFrench.tech.title} text={tabsContentFrench.tech.text} />
       )}
         <Homepage />       
         <Footer />

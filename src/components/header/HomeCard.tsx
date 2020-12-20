@@ -18,7 +18,7 @@ const HomeCard:React.FunctionComponent = ({picture, title, text}:HomeCardProps) 
                         <Col xs={12} sm={12} md={6} className="p-2 d-flex align-items-center justify-content-center">
                             <div>
                                 <Card.Title className="card-title text-center font-weight-bold p-3">{title}</Card.Title>
-                                <Card.Text className="card-body p-1 text-justify">
+                                <Card.Text className="card-body p-3 text-justify">
                                     {text}
                                 </Card.Text> 
                             </div>   
