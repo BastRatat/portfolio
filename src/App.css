@@ -134,10 +134,12 @@ header {
     background-color: #fc5185;
     color: white;
     border: none;
+    border-radius: 3px;
+    text-align: center;
 }
 
 .tech-btn:hover {
-    background-color: #fc5185;
+    background-color: #fc5185 !important;
     border: none;
 }
 
@@ -274,4 +276,8 @@ header {
 
 .profile-picture {
     border-radius: 300px;
+}
+
+.alert {
+    width: 80%;
 }

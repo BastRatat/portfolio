@@ -27,25 +27,25 @@ const ContactForm:React.FunctionComponent = () => {
     <Container className="d-flex justify-content-center my-3">
       <form onSubmit={sendEmail}>
         {hasError && (
-          <div>
+          <div className="d-flex justify-content-center">
             <Alert variant='danger' className="alert text-center">Service indisponible</Alert>
           </div>
         )}
         {messageSent && (
-          <div>
+          <div className="d-flex justify-content-center">
             <Alert variant='success' className="alert text-center">Message envoyé</Alert>
           </div>
         )}
         <div className="fields m-2">
-          <input type="text" name="name" className="input-fields" />
+          <input type="text" name="name" className="input-fields" placeholder="Nom" />
         </div>
         <div className="fields m-2">
-          <input type="email" name="email" className="input-fields" />
+          <input type="email" name="email" className="input-fields" placeholder="email" />
         </div>
         <div className="fields m-2">
-          <textarea name="body" className="text-area"/>
+          <textarea name="body" className="text-area" placeholder="Votre message"/>
         </div>
-        <Button type="submit" className="tech-btn ml-3 mb-3">Envoyer</Button>
+        <button type="submit" className="tech-btn ml-3 mb-3">Envoyer</button>
       </form>
     </Container>
   )
