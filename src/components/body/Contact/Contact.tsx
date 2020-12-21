@@ -15,8 +15,8 @@ const Contact:React.FunctionComponent = () => {
           <ContactInformation />
         </Col>
       </Row>
-      <h3 className="text-center contact-title">Plus d'information</h3>
-      <ContactForm />
+      {/* <h3 className="text-center contact-title">Plus d'information</h3> */}
+      {/* <ContactForm /> */}
     </Container>
   )
 }
