@@ -1,6 +1,6 @@
 export const homePageDescription = {
   firstParagraph: 'Après une expérience entrepreunariale de trois ans en Chine et un poste au sein du consulat général de France à Chengdu comme chargé de mission promotion, j’ai décidé de me reconvertir dans l’informatique. Attirés par les nouvelles technologies, j’ai développé de solides compétences dans la programmation d’applications web et les sciences des données.',
-  secondParagraph: 'Dans un premier temps autodidacte, j’ai décidé en janvier 2020 d’obtenir un diplôme certifié par l’Etat pour consolider mon profil. Ainsi, j’ai obtenu un diplôme de développeur d’application, inscrit au RNCP. Par ailleurs, l’intégralité de ma formation, à savoir les supports de cours, les interactions avec le mentoret les examens, s’est déroulée en anglais.',
+  secondParagraph: 'Dans un premier temps autodidacte, j’ai décidé en janvier 2020 d’obtenir un diplôme certifié par l’Etat pour consolider mon profil. Ainsi, j’ai obtenu un diplôme de développeur d’application (niveau Bachelor), inscrit au RNCP. Par ailleurs, l’intégralité de ma formation, à savoir les supports de cours, les interactions avec le mentor et les examens, s’est déroulée en anglais.',
   thirdParagraph: {
     title: 'Compétences générales',
     skills: [
