@@ -178,12 +178,6 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-    .alert { 
-        width: 20%
-    }
-}
-
-@media screen and (min-width: 768px) {
     .input-fields { 
         width: 250px;
         margin: 5px;
