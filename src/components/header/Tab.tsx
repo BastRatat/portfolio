@@ -1,14 +1,12 @@
- // @ts-nocheck
+// Add react-router
+// @ts-nocheck
 
 import React from 'react';
-import { Anchor } from 'antd';
 import './Tab.css'
-
-const { Link } = Anchor;
 
 type TabProps = {
     tabName: string,
-    handleHover: (string, boolean)=>void
+    handleHover: (string) => void
 }
 
 const Tab:React.FunctionComponent<TabProps> = ({ tabName, handleHover }) => {
@@ -19,9 +17,7 @@ const Tab:React.FunctionComponent<TabProps> = ({ tabName, handleHover }) => {
                 onMouseEnter={() => handleHover(tabName)}
                 onMouseLeave={() => handleHover(tabName)}
             >
-                <Anchor>
-                    <Link href={`#${tabName}`} title={tabName.toUpperCase()} />
-                </Anchor>
+                <a href={`#${tabName.toLowerCase()}`}>{tabName.toUpperCase()}</a>
             </li>
         
 

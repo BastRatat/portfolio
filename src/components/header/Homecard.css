@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
 
 .card {
-  background-color:  #2d4561;
+  background-color:  #343434;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin-top: 40px;
+  }
 }
 
 .card-title {

@@ -1,9 +1,9 @@
  // @ts-nocheck
-// https://colorsinspo.com/
 import React from 'react';
 import pictureOne from '../../images/img_1.jpg'
 import pictureTwo from '../../images/img_2.jpg'
 import pictureThree from '../../images/img_3.jpg'
+import pictureFour from '../../images/img_4.jpg'
 import './Picture.css'
 
 interface ProfilePictureProps {
@@ -29,6 +29,12 @@ const ProfilePicture:React.FunctionComponent = ({picture}:ProfilePictureProps) =
                 <img src={pictureThree} className="image img-fluid rounded" alt="programming" width="350px" />
             </div>
         )  
+    } else if (picture === 4) {
+        return (
+            <div className="container d-flex justify-content-center align-items-center">
+                <img src={pictureFour} className="image img-fluid rounded" alt="programming" width="350px" />
+            </div>
+        )
     } else {
         return (
             <div>

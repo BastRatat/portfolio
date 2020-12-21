@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 li:hover {
     cursor: pointer;
@@ -8,9 +9,9 @@ li:hover {
 
 a {
     color:white;
-    font-family: 'Varela';
+    font-family: 'Noto Serif', serif;
     font-size: 1.2em;
-    letter-spacing: .15em;
+    letter-spacing: .25em;
 }
 
 a:hover {
