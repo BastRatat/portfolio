@@ -8,7 +8,8 @@ import Description from '../body/Description/Description.tsx'
 const paragraphStyle = {
   color: 'white', 
   letterSpacing: '1px', 
-  fontSize: '1.2em'
+  fontSize: '1.2em',
+  textIndent: '2rem'
 }
 
 

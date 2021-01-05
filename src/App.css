@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 html {
     height: 100%;
@@ -7,7 +8,7 @@ html {
 body {
     margin: 0;
     height: 100vh;
-    background-color: #484848;
+    background-color: #252525;
     display: flex;
     flex-direction: column;
 }
@@ -31,7 +32,6 @@ header {
 .cards {
     animation-name: tabsAppearOpacity;
     animation-duration: 1s;
-
 }
 
 .deck {
@@ -119,11 +119,13 @@ header {
 }
 
 .flex-fill {
-    background-color: #484848 !important;
+    background-color: #252525 !important;
+    border: solid 1px #252525 !important;
 }
 
 .logo {
     background: transparent !important;
+    border: none;
 }
 
 .animated-card {
@@ -133,6 +135,7 @@ header {
 .tech-btn {
     background-color: #fc5185;
     color: white;
+    font-family: 'Merriweather', serif;
     border: none;
     border-radius: 3px;
     text-align: center;
@@ -140,6 +143,13 @@ header {
 
 .tech-btn:hover {
     background-color: #fc5185 !important;
+    font-family: 'Merriweather', serif;
+    border: none;
+}
+
+.tech-btn:disabled {
+    background-color: grey;
+    font-family: 'Merriweather', serif;
     border: none;
 }
 
@@ -151,13 +161,13 @@ header {
     background-color:#2A2A2A;
     border-radius: 20px;
     color: white;
-    font-family: 'Varela';
+    font-family: 'Merriweather', serif;
     animation: tabsAppearOpacity 2s;
 }
 
 .contact-description {
     color: white;
-    font-family: 'Varela';
+    font-family: 'Merriweather', serif;
     text-align: justify;
 }
 
@@ -172,11 +182,13 @@ header {
 .information-title {
     color:  #fc5185;
     letter-spacing: 1px;
+    font-family: 'Merriweather', serif;
 }
 
 .information-text {
     color: white;
     text-align: left;
+    font-family: 'Merriweather', serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -226,7 +238,7 @@ header {
     border: none;
 }
 
-.description-background, .contact-background {
+.contact-background {
     background-color: #302e2e;
     border-radius: 10px;
 }
@@ -241,16 +253,25 @@ header {
     color: #fc5185;
 }
 
+.description-text {
+    text-indent: 2rem;
+    font-family: 'Merriweather', serif;
+}
+
+.navbar {
+    text-align: center;
+}
+
 .description-text, .diploma-skill {
     color: white;
-    font-family: 'Varela';
+    font-family: 'Merriweather', serif;
     text-align: justify;
     font-size: 1.2em;
 }
 
 .examples {
     padding: 5px;
-    font-family: 'Varela';
+    font-family: 'Merriweather', serif;
     letter-spacing: 1px !important;
 }
 
@@ -280,4 +301,14 @@ header {
 
 .alert {
     width: 80%;
+}
+
+.tech-btn:focus {
+    outline: none;
+    border: 1px solid #fc5185;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #fc5185;
 }
