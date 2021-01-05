@@ -139,6 +139,7 @@ header {
     border: none;
     border-radius: 3px;
     text-align: center;
+    cursor: pointer;
 }
 
 .tech-btn:hover {
@@ -311,4 +312,10 @@ header {
 input:focus, textarea:focus {
     outline: none;
     border: 2px solid #fc5185;
+}
+
+.diploma-link {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
 }

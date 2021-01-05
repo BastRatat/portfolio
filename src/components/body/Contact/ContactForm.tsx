@@ -39,6 +39,7 @@ const ContactForm:React.FunctionComponent = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
+    if (name === '' || email === '' || message === '') setIsEmpty(true)
     sendEmail(event)    
     event.target.reset();
   }
@@ -55,6 +56,11 @@ const ContactForm:React.FunctionComponent = () => {
           <div className="d-flex justify-content-center">
             <Alert variant='success' className="alert text-center">Message envoyé</Alert>
           </div>
+        )}
+        {isEmpty && (
+          <div className="d-flex justify-content-center">
+            <Alert variant='danger' className="alert text-center">Merci de remplir les champs</Alert>
+          </div>          
         )}
         <div className="fields m-2">
           <input type="text" name="name" className="input-fields" placeholder="Nom" onChange={(event) => handleChange(event, 'name')} value={name} />
