@@ -2,15 +2,10 @@
 
 // Go to top button
 
-import React, { useState } from 'react';
-import { Container, Button } from 'react-bootstrap'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useParams
-} from "react-router-dom";
+import React, { useState, useRef } from 'react';
+import { Container } from 'react-bootstrap'
 import './App.css';
+import { UpOutlined } from '@ant-design/icons'
 
 import NavigationBar from './components/header/NavigationBar.tsx'
 import Homepage from './components/homepage/Homepage.tsx'
@@ -27,15 +22,18 @@ interface hovered {
 function App() {
 
   const [homeMessage, setHomeMessage] = useState<boolean>(true)
-  const [homeHovered, setHomeHovered] = useState<boolean>(false)
-  const [techHovered, setTechHovered] = useState<boolean>(false)
-  const [contactHovered, setContactHovered] = useState<boolean>(false)
+
+  const navBarRef = useRef()
 
   const [hovered, setHovered] = useState<hovered>({
     home: false,
     tech: false,
     contact: false
   })
+
+  const handleClick = () => {
+    navBarRef.current.scrollIntoView({ behavior: 'smooth' })
+  }
 
   const handleHover = (tabName) => {
     switch(tabName) {
@@ -71,7 +69,7 @@ function App() {
   
   return (
       <div className="App">
-        <header>
+        <header ref={navBarRef}>
           <NavigationBar handleHover={handleHover} />
         </header>
         {homeMessage && (
@@ -95,6 +93,7 @@ function App() {
       )}
         <Homepage />       
         <Footer />
+        <UpOutlined className="back-top-btn" onClick={handleClick} />
       </div>
   );
 }

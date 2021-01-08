@@ -1,7 +1,7 @@
 // redirect form data to API, handle errors, create a validation form
 
 // @ts-nocheck
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Container, Alert } from 'react-bootstrap';
 import emailjs from 'emailjs-com'
 

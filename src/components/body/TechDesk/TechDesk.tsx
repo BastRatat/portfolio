@@ -2,7 +2,6 @@
 
 // @ts-nocheck
 import React, { useState } from 'react';
-import { Redirect } from 'react-router-dom'
 import TechCard from './TechCard.tsx'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import './TechDesk.css'

@@ -1,6 +1,5 @@
 // @ts-nocheck
-import React, { useState } from 'react';
-import { Card } from 'react-bootstrap'
+import React from 'react';
 import './TechDesk.css'
 import { useSpring, animated } from 'react-spring'
 

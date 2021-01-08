@@ -1,7 +1,6 @@
 // @ts-nocheck
 
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import { homePageDescription } from '../../../utils/description'
 import ocr from '../../../images/ocr.png'
 
@@ -27,7 +26,7 @@ const Description:React.FunctionComponent = () => {
           </div>
           <a href="https://www.francecompetences.fr/recherche/rncp/27099/" className="diploma-link">
             <h4>Développeur d'applications (inscrit au RNCP)</h4>
-          </a>
+          </a>g
           <div className="my-5">
             <h5>Code(s) NSF</h5>
             <p className="description-text text-center">Programmation, mise en place de logiciels</p>
